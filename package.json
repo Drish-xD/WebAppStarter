@@ -1,0 +1,60 @@
+{
+  "name": "add-name-here",
+  "description": "add-description-here",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Drish",
+    "email": "hey@drishxd.dev",
+    "url": "https://drishxd.dev"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier -w .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "eslint --fix",
+      "pnpm format"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "prettier",
+      "next/core-web-vitals"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
+  "dependencies": {
+    "next": "13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "13.5.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
